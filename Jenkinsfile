@@ -5,7 +5,8 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clone the repository
-                git 'https://github.com/isukataruka12/dummy-portfolio.git'
+                git branch: 'main', url: 'https://github.com/isukataruka12/dummy-portfolio.git'
+
             }
         }
 
